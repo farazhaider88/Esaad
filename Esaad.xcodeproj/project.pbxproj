@@ -29,8 +29,6 @@
 		596AABCE21341E940038B24C /* SimpleAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AABC821341E920038B24C /* SimpleAlertVC.swift */; };
 		596AABD521341FA10038B24C /* PopupModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596AABD421341FA10038B24C /* PopupModule.storyboard */; };
 		59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E190C52133D46C005F55F3 /* AppDelegate.swift */; };
-		59E190C82133D46C005F55F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E190C72133D46C005F55F3 /* ViewController.swift */; };
-		59E190CB2133D46C005F55F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E190C92133D46C005F55F3 /* Main.storyboard */; };
 		59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CC2133D46C005F55F3 /* Assets.xcassets */; };
 		59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -60,8 +58,6 @@
 		596AABD421341FA10038B24C /* PopupModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopupModule.storyboard; sourceTree = "<group>"; };
 		59E190C22133D46C005F55F3 /* Esaad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esaad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E190C52133D46C005F55F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59E190C72133D46C005F55F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59E190CA2133D46C005F55F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59E190CC2133D46C005F55F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59E190CF2133D46C005F55F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59E190D12133D46C005F55F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +166,7 @@
 		596AABC121341B280038B24C /* SupportngFiles */ = {
 			isa = PBXGroup;
 			children = (
+				59E190D12133D46C005F55F3 /* Info.plist */,
 				59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */,
 				59E190CC2133D46C005F55F3 /* Assets.xcassets */,
 				596AABC221341C9D0038B24C /* Esaad-Bridging-Header.h */,
@@ -225,14 +222,11 @@
 			children = (
 				59E190E62133DA54005F55F3 /* AppDelegate */,
 				59E190E42133DA54005F55F3 /* BaseController */,
-				59E190E72133DA54005F55F3 /* HelperClasses */,
 				59E190E32133DA54005F55F3 /* Modules */,
 				59E190E82133DA54005F55F3 /* ServiceModel */,
+				59E190E72133DA54005F55F3 /* HelperClasses */,
 				59E190E52133DA54005F55F3 /* ThirdPartyControls */,
 				596AABC121341B280038B24C /* SupportngFiles */,
-				59E190C72133D46C005F55F3 /* ViewController.swift */,
-				59E190C92133D46C005F55F3 /* Main.storyboard */,
-				59E190D12133D46C005F55F3 /* Info.plist */,
 			);
 			path = Esaad;
 			sourceTree = "<group>";
@@ -374,7 +368,6 @@
 			files = (
 				59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */,
 				59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */,
-				59E190CB2133D46C005F55F3 /* Main.storyboard in Resources */,
 				596AABD521341FA10038B24C /* PopupModule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +484,6 @@
 			files = (
 				596AAB9F213415790038B24C /* UITextField+Extension.swift in Sources */,
 				596AABA3213415790038B24C /* AppConstants.swift in Sources */,
-				59E190C82133D46C005F55F3 /* ViewController.swift in Sources */,
 				59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */,
 				596AABA7213415790038B24C /* Validation.swift in Sources */,
 				596AAB9E213415790038B24C /* UIFont+Extension.swift in Sources */,
@@ -516,14 +508,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59E190C92133D46C005F55F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59E190CA2133D46C005F55F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
