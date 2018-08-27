@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable, UNUserNotif
             //self.shiftToNotification()
         }
         //--- end Notification handling --
-        self.registerForPushNotifications()
+        //self.registerForPushNotifications()
         //-- update token ----
         if let flag = UserDefaults.standard.object(forKey: "tokenUpdated") as? Bool {
             if !flag {
@@ -181,9 +181,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable, UNUserNotif
     }
     
     func shiftToLogin()  {
-        /*let storyboard = AppStoryboard.LoginModule.instance
+        let storyboard = AppStoryboard.LoginModule.instance
          let navigationController = LoginModuleNC(rootViewController: storyboard.instantiateViewController(withIdentifier: "LoginVC"))
-         self.window?.rootViewController = navigationController*/
+         self.window?.rootViewController = navigationController
     }
     
     func shiftToHome()  {

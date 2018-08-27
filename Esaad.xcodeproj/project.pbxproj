@@ -29,6 +29,9 @@
 		596AABCE21341E940038B24C /* SimpleAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AABC821341E920038B24C /* SimpleAlertVC.swift */; };
 		596AABD521341FA10038B24C /* PopupModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596AABD421341FA10038B24C /* PopupModule.storyboard */; };
 		596AABD72134257F0038B24C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 596AABD62134257F0038B24C /* Info.plist */; };
+		599740FA2134359600FDE3B1 /* LoginModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599740F92134359600FDE3B1 /* LoginModule.storyboard */; };
+		599740FC213435AA00FDE3B1 /* HomeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599740FB213435AA00FDE3B1 /* HomeModule.storyboard */; };
+		599740FE213436D500FDE3B1 /* LoginModuleNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599740FD213436D500FDE3B1 /* LoginModuleNC.swift */; };
 		59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E190C52133D46C005F55F3 /* AppDelegate.swift */; };
 		59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CC2133D46C005F55F3 /* Assets.xcassets */; };
 		59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */; };
@@ -58,6 +61,9 @@
 		596AABC821341E920038B24C /* SimpleAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlertVC.swift; sourceTree = "<group>"; };
 		596AABD421341FA10038B24C /* PopupModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopupModule.storyboard; sourceTree = "<group>"; };
 		596AABD62134257F0038B24C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Esaad/Info.plist; sourceTree = SOURCE_ROOT; };
+		599740F92134359600FDE3B1 /* LoginModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginModule.storyboard; sourceTree = "<group>"; };
+		599740FB213435AA00FDE3B1 /* HomeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModule.storyboard; sourceTree = "<group>"; };
+		599740FD213436D500FDE3B1 /* LoginModuleNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleNC.swift; sourceTree = "<group>"; };
 		59E190C22133D46C005F55F3 /* Esaad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esaad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E190C52133D46C005F55F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E190CC2133D46C005F55F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		596AABBA2134189C0038B24C /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				599740FD213436D500FDE3B1 /* LoginModuleNC.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 		596AABBC213418B70038B24C /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				599740F92134359600FDE3B1 /* LoginModule.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -200,6 +208,38 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		599740F42134349800FDE3B1 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				599740F82134357700FDE3B1 /* ViewController */,
+				599740F72134356F00FDE3B1 /* Storyboard */,
+				599740F52134353A00FDE3B1 /* Models */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		599740F52134353A00FDE3B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		599740F72134356F00FDE3B1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				599740FB213435AA00FDE3B1 /* HomeModule.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		599740F82134357700FDE3B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		59E190B92133D46C005F55F3 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +275,7 @@
 		59E190E32133DA54005F55F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				599740F42134349800FDE3B1 /* HomeModule */,
 				596AABC321341E210038B24C /* PopupModule */,
 				596AABB42134182E0038B24C /* LoginModule */,
 			);
@@ -370,6 +411,8 @@
 				596AABD72134257F0038B24C /* Info.plist in Resources */,
 				59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */,
 				59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */,
+				599740FC213435AA00FDE3B1 /* HomeModule.storyboard in Resources */,
+				599740FA2134359600FDE3B1 /* LoginModule.storyboard in Resources */,
 				596AABD521341FA10038B24C /* PopupModule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +532,7 @@
 				59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */,
 				596AABA7213415790038B24C /* Validation.swift in Sources */,
 				596AAB9E213415790038B24C /* UIFont+Extension.swift in Sources */,
+				599740FE213436D500FDE3B1 /* LoginModuleNC.swift in Sources */,
 				596AABA4213415790038B24C /* Constants.swift in Sources */,
 				596AABB32134169A0038B24C /* APIManagerBase.swift in Sources */,
 				596AABAB213415BA0038B24C /* BaseController.swift in Sources */,
