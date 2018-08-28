@@ -37,6 +37,9 @@
 		59974105213533E800FDE3B1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59974104213533E800FDE3B1 /* SettingViewController.swift */; };
 		599741082135360A00FDE3B1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5997410A2135360A00FDE3B1 /* Localizable.strings */; };
 		5997410D213556C000FDE3B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997410C213556C000FDE3B1 /* HomeViewController.swift */; };
+		5997410F2135660900FDE3B1 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997410E2135660800FDE3B1 /* UITableView+Extension.swift */; };
+		599741112135669500FDE3B1 /* NSObject+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599741102135669500FDE3B1 /* NSObject+Swift.swift */; };
+		59974113213566EE00FDE3B1 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59974112213566EE00FDE3B1 /* UICollectionView+Extension.swift */; };
 		59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E190C52133D46C005F55F3 /* AppDelegate.swift */; };
 		59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CC2133D46C005F55F3 /* Assets.xcassets */; };
 		59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */; };
@@ -75,6 +78,9 @@
 		599741092135360A00FDE3B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5997410B2135361B00FDE3B1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5997410C213556C000FDE3B1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5997410E2135660800FDE3B1 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		599741102135669500FDE3B1 /* NSObject+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Swift.swift"; sourceTree = "<group>"; };
+		59974112213566EE00FDE3B1 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		59E190C22133D46C005F55F3 /* Esaad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esaad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E190C52133D46C005F55F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E190CC2133D46C005F55F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				596AAB90213415780038B24C /* UITextField+Extension.swift */,
 				596AAB91213415780038B24C /* UIView+Extention.swift */,
 				596AAB92213415780038B24C /* UIViewController+Extension.swift */,
+				5997410E2135660800FDE3B1 /* UITableView+Extension.swift */,
+				59974112213566EE00FDE3B1 /* UICollectionView+Extension.swift */,
+				599741102135669500FDE3B1 /* NSObject+Swift.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -561,6 +570,7 @@
 				596AAB9E213415790038B24C /* UIFont+Extension.swift in Sources */,
 				599740FE213436D500FDE3B1 /* LoginModuleNC.swift in Sources */,
 				596AABA4213415790038B24C /* Constants.swift in Sources */,
+				59974113213566EE00FDE3B1 /* UICollectionView+Extension.swift in Sources */,
 				596AABB32134169A0038B24C /* APIManagerBase.swift in Sources */,
 				596AABAB213415BA0038B24C /* BaseController.swift in Sources */,
 				596AABA5213415790038B24C /* Singleton.swift in Sources */,
@@ -573,11 +583,13 @@
 				596AABB22134169A0038B24C /* APIManager.swift in Sources */,
 				596AABA6213415790038B24C /* Utility.swift in Sources */,
 				596AAB9D213415790038B24C /* UIButton+Extension.swift in Sources */,
+				599741112135669500FDE3B1 /* NSObject+Swift.swift in Sources */,
 				596AABAD213415FF0038B24C /* AppStateManager.swift in Sources */,
 				596AABA2213415790038B24C /* Enums.swift in Sources */,
 				59974103213531A500FDE3B1 /* HomeModuleNC.swift in Sources */,
 				596AABBF213418DC0038B24C /* UserModel.swift in Sources */,
 				596AABA0213415790038B24C /* UIView+Extention.swift in Sources */,
+				5997410F2135660900FDE3B1 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
