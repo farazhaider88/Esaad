@@ -28,4 +28,8 @@ extension UIButton {
         self.actionHandleBlock(action: action)
         self.addTarget(self, action: #selector(UIButton.triggerActionHandleBlock), for: control)
     }
+    
+    open override func awakeFromNib() {
+        self.setTitle(Utility.getLocalizedString((self.titleLabel?.text)!), for: UIControlState.normal)
+    }
 }

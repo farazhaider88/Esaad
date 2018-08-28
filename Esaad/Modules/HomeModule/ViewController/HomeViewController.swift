@@ -1,5 +1,5 @@
 //
-//  SettingViewController.swift
+//  HomeViewController.swift
 //  Esaad
 //
 //  Created by Faraz Haider on 28/08/2018.
@@ -7,19 +7,13 @@
 //
 
 import UIKit
-import MOLH
 
-class SettingViewController: BaseController {
+class HomeViewController: BaseController {
 
-    @IBOutlet weak var buttonChangeLanguage: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Home"
         // Do any additional setup after loading the view.
-        
-        self.title = "Settings"
-        buttonChangeLanguage.setTitle(Utility.getLocalizedString("TextToLocalize"), for: UIControlState.normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,12 +21,7 @@ class SettingViewController: BaseController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func actionChangeLanguage(_ sender: Any) {
-        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == "en" ? "ar" : "en")
-        MOLH.reset()
-        
-    }
-    
+
     /*
     // MARK: - Navigation
 

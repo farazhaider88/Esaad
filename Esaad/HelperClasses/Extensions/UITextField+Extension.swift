@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 extension UITextField{
     @IBInspectable var placeHolderColor: UIColor? {
@@ -15,6 +16,14 @@ extension UITextField{
         }
         set {
             self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedStringKey.foregroundColor: newValue!])
+        }
+    }
+    
+    open override func awakeFromNib() {
+        if MOLHLanguage.currentAppleLanguage() == "en" {
+            self.textAlignment = .left
+        }else{
+            self.textAlignment = .right
         }
     }
 }
