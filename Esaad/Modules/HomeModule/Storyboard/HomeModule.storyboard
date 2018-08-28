@@ -68,6 +68,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="49c-7C-9br"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonChangeLanguage" destination="ela-Kb-ZRN" id="fCE-ba-pxi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZS1-F4-BOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

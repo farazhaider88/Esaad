@@ -163,4 +163,8 @@ class Utility {
             }
         }
     }
+    
+    static func getLocalizedString(_ key : String) -> String {
+        return NSLocalizedString(key, comment: "")
+    }
 }

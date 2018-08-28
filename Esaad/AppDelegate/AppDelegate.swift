@@ -200,6 +200,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable, UNUserNotif
 
     
     func reset() {
+        
+        self.shiftToHome()
+        
+        
+        
 //        let rootviewcontroller: UIWindow = ((UIApplication.shared.delegate?.window)!)!
 //        let nav = UINavigationController.init(rootViewController: HomeViewController.loadVC())
 //        rootviewcontroller.rootViewController = nav

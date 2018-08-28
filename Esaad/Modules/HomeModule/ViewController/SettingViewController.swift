@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import MOLH
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var buttonChangeLanguage: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        buttonChangeLanguage.setTitle(Utility.getLocalizedString("TextToLocalize"), for: UIControlState.normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +27,9 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func actionChangeLanguage(_ sender: Any) {
+        MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == "en" ? "ar" : "en")
+        MOLH.reset()
+        
     }
     
     /*
