@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="Fcc-Fl-qar">
             <objects>
-                <viewController id="4SR-4h-luR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="4SR-4h-luR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1YC-ro-lh6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,10 +24,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-Jt-8I5">
+                                <rect key="frame" x="146.5" y="364" width="82" height="30"/>
+                                <state key="normal" title="goToSetting"/>
+                                <connections>
+                                    <segue destination="kky-lX-WCs" kind="show" id="rUz-I0-Z21"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ud5-Jt-8I5" firstAttribute="centerX" secondItem="1YC-ro-lh6" secondAttribute="centerX" id="ZvL-4p-Jez"/>
                             <constraint firstItem="nvI-B9-y6P" firstAttribute="centerY" secondItem="1YC-ro-lh6" secondAttribute="centerY" id="d0Q-Bt-RUg"/>
+                            <constraint firstItem="Ud5-Jt-8I5" firstAttribute="top" secondItem="nvI-B9-y6P" secondAttribute="bottom" constant="20" id="tSi-9Y-Svh"/>
                             <constraint firstItem="nvI-B9-y6P" firstAttribute="centerX" secondItem="1YC-ro-lh6" secondAttribute="centerX" id="zod-OB-Yx5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvb-Tc-HQy"/>
@@ -36,6 +45,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpT-Tt-Q8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="339.58020989505252"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="nfh-A5-9nE">
+            <objects>
+                <viewController id="kky-lX-WCs" customClass="SettingViewController" customModule="Esaad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSv-xn-2I5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ela-Kb-ZRN">
+                                <rect key="frame" x="125" y="318.5" width="125" height="30"/>
+                                <state key="normal" title="Change Language"/>
+                                <connections>
+                                    <action selector="actionChangeLanguage:" destination="kky-lX-WCs" eventType="touchUpInside" id="EWo-yG-lqw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ela-Kb-ZRN" firstAttribute="centerX" secondItem="rSv-xn-2I5" secondAttribute="centerX" id="qni-lH-jYp"/>
+                            <constraint firstItem="ela-Kb-ZRN" firstAttribute="centerY" secondItem="rSv-xn-2I5" secondAttribute="centerY" id="tbN-Nc-M29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="49c-7C-9br"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZS1-F4-BOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="340"/>
         </scene>
     </scenes>
 </document>

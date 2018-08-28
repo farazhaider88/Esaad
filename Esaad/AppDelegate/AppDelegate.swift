@@ -187,12 +187,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable, UNUserNotif
     }
     
     func shiftToHome()  {
-       /* let storyboard = AppStoryboard.HomeModule.instance
-        if let vc = storyboard.instantiateViewController(withIdentifier: "SideMenuRootVC") as? SideMenuRootVC {
-            vc.backgroundImage = #imageLiteral(resourceName: "Bg")
-            vc.rootState = RootState.Home
-            self.window?.rootViewController = vc
-        }*/
+        let storyboard = AppStoryboard.HomeModule.instance
+//        if let vc = storyboard.instantiateViewController(withIdentifier: "SideMenuRootVC") as? SideMenuRootVC {
+//            vc.backgroundImage = #imageLiteral(resourceName: "Bg")
+//            vc.rootState = RootState.Home
+//            self.window?.rootViewController = vc
+//        }
+        
+        let navigationController = HomeModuleNC(rootViewController: storyboard.instantiateViewController(withIdentifier: "HomeVC"))
+        self.window?.rootViewController = navigationController
     }
 
     

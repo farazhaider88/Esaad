@@ -32,6 +32,9 @@
 		599740FA2134359600FDE3B1 /* LoginModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599740F92134359600FDE3B1 /* LoginModule.storyboard */; };
 		599740FC213435AA00FDE3B1 /* HomeModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599740FB213435AA00FDE3B1 /* HomeModule.storyboard */; };
 		599740FE213436D500FDE3B1 /* LoginModuleNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599740FD213436D500FDE3B1 /* LoginModuleNC.swift */; };
+		5997410021352E9000FDE3B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599740FF21352E9000FDE3B1 /* LoginViewController.swift */; };
+		59974103213531A500FDE3B1 /* HomeModuleNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59974102213531A500FDE3B1 /* HomeModuleNC.swift */; };
+		59974105213533E800FDE3B1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59974104213533E800FDE3B1 /* SettingViewController.swift */; };
 		59E190C62133D46C005F55F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E190C52133D46C005F55F3 /* AppDelegate.swift */; };
 		59E190CD2133D46C005F55F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CC2133D46C005F55F3 /* Assets.xcassets */; };
 		59E190D02133D46C005F55F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E190CE2133D46C005F55F3 /* LaunchScreen.storyboard */; };
@@ -64,6 +67,9 @@
 		599740F92134359600FDE3B1 /* LoginModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginModule.storyboard; sourceTree = "<group>"; };
 		599740FB213435AA00FDE3B1 /* HomeModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeModule.storyboard; sourceTree = "<group>"; };
 		599740FD213436D500FDE3B1 /* LoginModuleNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleNC.swift; sourceTree = "<group>"; };
+		599740FF21352E9000FDE3B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		59974102213531A500FDE3B1 /* HomeModuleNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleNC.swift; sourceTree = "<group>"; };
+		59974104213533E800FDE3B1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		59E190C22133D46C005F55F3 /* Esaad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esaad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E190C52133D46C005F55F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E190CC2133D46C005F55F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		596AABBD213418C70038B24C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				599740FF21352E9000FDE3B1 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 			children = (
 				599740F82134357700FDE3B1 /* ViewController */,
 				599740F72134356F00FDE3B1 /* Storyboard */,
+				599741012135318D00FDE3B1 /* NavigationController */,
 				599740F52134353A00FDE3B1 /* Models */,
 			);
 			path = HomeModule;
@@ -236,8 +244,17 @@
 		599740F82134357700FDE3B1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				59974104213533E800FDE3B1 /* SettingViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		599741012135318D00FDE3B1 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				59974102213531A500FDE3B1 /* HomeModuleNC.swift */,
+			);
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		59E190B92133D46C005F55F3 = {
@@ -537,6 +554,8 @@
 				596AABB32134169A0038B24C /* APIManagerBase.swift in Sources */,
 				596AABAB213415BA0038B24C /* BaseController.swift in Sources */,
 				596AABA5213415790038B24C /* Singleton.swift in Sources */,
+				5997410021352E9000FDE3B1 /* LoginViewController.swift in Sources */,
+				59974105213533E800FDE3B1 /* SettingViewController.swift in Sources */,
 				596AABAA213415BA0038B24C /* BaseNavigationController.swift in Sources */,
 				596AABB12134169A0038B24C /* APIManager_Authentication.swift in Sources */,
 				596AABA1213415790038B24C /* UIViewController+Extension.swift in Sources */,
@@ -546,6 +565,7 @@
 				596AAB9D213415790038B24C /* UIButton+Extension.swift in Sources */,
 				596AABAD213415FF0038B24C /* AppStateManager.swift in Sources */,
 				596AABA2213415790038B24C /* Enums.swift in Sources */,
+				59974103213531A500FDE3B1 /* HomeModuleNC.swift in Sources */,
 				596AABBF213418DC0038B24C /* UserModel.swift in Sources */,
 				596AABA0213415790038B24C /* UIView+Extention.swift in Sources */,
 			);
